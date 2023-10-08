@@ -30,7 +30,7 @@ class LakeDetectionModel(nn.Module):
 
 # Load the water level detection model (replace 'YourWaterLevelModel' with your actual model class)
 model = LakeDetectionModel()
-model.load_state_dict(torch.load("water_level_model.pth"))
+model.load_state_dict(torch.load("water_level_model_interrupted.pth"))
 model.eval()
 
 img2018_path = sys.argv[1]
